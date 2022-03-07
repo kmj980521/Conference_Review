@@ -1,8 +1,16 @@
 # Introduce Youtube Flutter Decoding
 
 ## 요약
-[1. 플러터 디코딩이란?]
-
+[1. 플러터 디코딩이란?]()
+[2. 핫 리로드가 동작하지 않는 이유]()
+[3. 위젯의 생명주기]()
+[4. BuildContext란?]()
+[5. Async와 Isolate]()
+[6. Unbounded height/width error]()
+[7. Package와 플러그인]()
+[8. 노란색 밑줄이 그어진 텍스트]()
+[9. ShrinkWrap과 Sliver]()
+[10. Tear-off]()
 
 
 ## 1. 플러터 디코딩이란?
@@ -210,6 +218,15 @@ ElevatedButton(
   child:: ...,
 )
 ```
-
+- 익명람다함수의 사용을 줄이고 Tear-off를 잘 활용하자
 
 [출처 유튜브 영상](https://www.youtube.com/watch?v=W6D1MqqPdXs&t=788s)
+
+## Going forward (그 외 시리즈 채널)
+- Begin learning Flutter
+- Further your Flutter skills!
+- Flutter Widget of the Week
+- Flutter Apprentice Book Club
+- Events
+- Flutter in Focus
+- The Boring Flutter Development Show
