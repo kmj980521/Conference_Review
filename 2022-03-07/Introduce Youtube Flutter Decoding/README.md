@@ -131,12 +131,25 @@ void _refresh() async {
 
 ---
 
-
 ### 8. ShrinkWrap과 Sliver
+- ShrinkWrap이 true인 경우 스크롤바의 크기를 결정하기 위해 ListView의 모든 위젯을 강제로 만든다 (만약 타일에 아이콘이 많이 들어가거나 애니메이션이 들어간다면 성능 저하로 이어질 수 있다)
+![image](https://user-images.githubusercontent.com/61898890/157015939-e5a1ce05-7e9b-4bb0-829d-80df8c4ceafc.png)
 
+#### 그렇다면 shrinkWrap을 안 쓰고 어떻게 성능을 개선할 수 있을까?
+- outerList를 감싸는 ListView를 **CustomScrollView**로 바꾼다
+- outerListChildren을 **SliverList**로 바꾼다
+- outerListChildren의 내부 아이템을 **delegate가 필요한 SliverList**로 바꾼다
 
+##### Before
 
+![image](https://user-images.githubusercontent.com/61898890/157016514-ec115152-2c65-49c7-bd52-8f24f3341aac.png)
 
+##### After
+
+![image](https://user-images.githubusercontent.com/61898890/157016545-b3ed5cd2-2fc0-4227-a9b9-ab7411ff483f.png)
+
+#### 해결 방법
+- shrinkWrap:true가 보이면 **SliverList로 바꾸자!**
 
 
 
