@@ -157,23 +157,59 @@ void _refresh() async {
 
 ### 9. 위젯클래스와 헬퍼 메소드
 #### 헬퍼 메서드
+- 입력 변수가 오픈되어 있어, 변수 전달이 상대적으로 쉽다 
+- 또한, 코드량이 적다는 장점이 있다
+- 직관적이지가 않고, Widget이라 명시하지 않는다면 내부 내용을 확인해야 한다
+- 내부에 setState가 있다면, 이 헬퍼메서드를 포함한 모든 위젯은 리빌드 된다 (만약 애니메이션 위젰이 있으면 성능 저하의 요인이 된다)**
+
+
 ```dart
 Widget someWidget() {
   return Container();
 }
 ```
 
+#### 위젯 클래스
+- const 생성자가 있으면 위젯을 재사용함으로써 위젯의 재생성하는 불필요한 작업들을 줄일 수 있다
+- 내부에서 buildContext를 사용하는 경우 잘못된 buildContext 사용으로 인한 bug를 사전에 예방할 수 있다
 
 
+```dart
+class SomeWidget extends StatelessWidget{
+  ...
+}
+```
 
+> Classes have a better default behavior. The only benefit of methods is having to write a tiny bit less code. There's no functional benefit
+
+#### 결론
+
+- 불필요한 빌드를 방지하기 위해 **최대한 위젯 클래스를 사용**하자
+- **Const 생성자를 이용**하자
 
 
 ---
 
 ### 10. Tear-off
+- 불필요한 익명 함수를 사용하지 않고, **함수시그니쳐를 제공하는 방법**
 
+##### tear-off 전
+```dart
+ElevatedButton(
+  onPressed: () {
+    myHandler();
+  },
+  child:: ...,
+)
+```
 
-
+##### tear-off 후
+```dart
+ElevatedButton(
+  onPressed:myHandler();
+  child:: ...,
+)
+```
 
 
 [출처 유튜브 영상](https://www.youtube.com/watch?v=W6D1MqqPdXs&t=788s)
