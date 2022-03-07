@@ -153,12 +153,19 @@ void _refresh() async {
 
 
 
-
-
-
 ---
 
 ### 9. 위젯클래스와 헬퍼 메소드
+#### 헬퍼 메서드
+```dart
+Widget someWidget() {
+  return Container();
+}
+```
+
+
+
+
 
 
 ---
