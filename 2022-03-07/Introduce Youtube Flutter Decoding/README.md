@@ -3,23 +3,26 @@
 ## 요약
 [1. 플러터 디코딩이란?](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#1-%ED%94%8C%EB%9F%AC%ED%84%B0-%EB%94%94%EC%BD%94%EB%94%A9%EC%9D%B4%EB%9E%80)
 
-[2. 핫 리로드가 동작하지 않는 이유](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#2-%EC%9C%84%EC%A0%AF%EC%9D%98-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0)
+[2. 핫 리로드가 동작하지 않는 이유](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#1-%ED%95%AB-%EB%A6%AC%EB%A1%9C%EB%93%9C%EA%B0%80-%EB%8F%99%EC%9E%91%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%9D%B4%EC%9C%A0)
 
-[3. 위젯의 생명주기](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#3-buildcontext%EB%9E%80)
+[3. 위젯의 생명주기](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#2-%EC%9C%84%EC%A0%AF%EC%9D%98-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0)
 
-[4. BuildContext란?](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#4-async%EC%99%80-isolate)
+[4. BuildContext란?](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#3-buildcontext%EB%9E%80)
 
-[5. Async와 Isolate]()
+[5. Async와 Isolate](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#4-async%EC%99%80-isolate)
 
-[6. Unbounded height/width error]()
+[6. Unbounded height/width error](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#5-unbounded-heightwidth-error)
 
-[7. Package와 플러그인]()
+[7. Package와 플러그인](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#6-package%EC%99%80-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8)
 
-[8. 노란색 밑줄이 그어진 텍스트]()
+[8. 노란색 밑줄이 그어진 텍스트](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#7-%EB%85%B8%EB%9E%80%EC%83%89-%EB%B0%91%EC%A4%84%EC%9D%B4-%EA%B7%B8%EC%96%B4%EC%A7%84-%ED%85%8D%EC%8A%A4%ED%8A%B8)
 
-[9. ShrinkWrap과 Sliver]()
+[9. ShrinkWrap과 Sliver](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#8-shrinkwrap%EA%B3%BC-sliver
+)
 
-[10. Tear-off]()
+[10. 위젯클래스와 헬퍼 메소드](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#9-%EC%9C%84%EC%A0%AF%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%ED%97%AC%ED%8D%BC-%EB%A9%94%EC%86%8C%EB%93%9C)
+
+[11. Tear-off](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Introduce%20Youtube%20Flutter%20Decoding/README.md#10-tear-off)
 
 
 ## 1. 플러터 디코딩이란?
