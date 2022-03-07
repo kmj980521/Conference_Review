@@ -48,38 +48,98 @@
 - Flutter에는 다양한 Pattern 선택지가 있다 (ex. MVVM, MVC, Redux, Mobx, Bloc, Provider ....)
 
 
-
-
-
 ## 5. Pattern 적용방법 - BLOC
+### Overview
+#### BLOC Pattern
+- BLOC Pattern은 google의 개발자 Felix Angelo가 제안한 상태 관리 패턴
+
+#### 주요 목적
+- Business Logic과 UI의 완전한 분리
+- 개발자의 효율적인 코드 재사용
+- UI와 Business Logic을 분리하여 테스트
+
+#### 핵심 컨셉
+- **Stream** : Business Logic을 구현하는 BLOC 혹은 Cubit에 Dart : Stream이 사용된다. Stream은 비동기 데이터를 받기 위해 사용된다.
+- Cubit, BLOC : Presentation Layer가 Business Logic을 구독할 수 있게 해주는 요소
+
+#### 구조적 특징
+- Presentation Layer(UI) : Business에서 받은 상태정보를 어떻게 다음 화면에서 보여줄까?
+- Business Layer : Data Layer에서 받은 정보를 어떻게 상태정보에 반영할까?
+- Data Layer : 비즈니스 로직에 어디서(api, db, etc..)온 정보를 어떤(Data type)으로 가공해서 전달할까? 
+
+![image](https://user-images.githubusercontent.com/61898890/156984018-4300d4ed-42b3-4097-ab3c-e61b1e9578f2.png)
+
+### 설계 방법
+1. 프로젝트 폴더 구조 잡기
+
+![image](https://user-images.githubusercontent.com/61898890/156984485-6299e7a8-5711-4e4b-bfdc-807bd90cac0c.png)
+
+[출처:BLOC architecture Samples](https://github.com/brianegan/flutter_architecture_samples/tree/master/bloc_library)
+
+2. 프로젝트 폴더 별 구성, 코드 요약
+### blocks 폴더 
+
+#### logic_block.dart  
+- Block<Event, State>를 extend 받고, 내부적으로 Stream을 가진다
+- Event는 수신할 사용자의 이벤트, State는 Stream으로 넘겨줄 Stream
 
 
+#### logic_event.dart
+- 사용자가 어떤 이벤트를 하고자 하는지를 판단해서 사용자에게 stream 정보를 전송
+- **Equatable**을 extends 하고 같은 객체인지를 판단한다 
+
+#### logic_status.dart
+- 사용자의 UI가 어떤 Status일 때 어떤 행동을 할 것인지 판별
+- **Equatable**을 extends 한다
+
+- Equatable 클래스를 extends 한 경우, get에서 BLOC이 가진 모든 프로퍼티를 넘겨주는데, 정해진 프로퍼티들을 다 넘겨주지 않으면 상태를 Stream으로 계속해서 전송하지 못하는 일들이 발생한다
 
 
+![image](https://user-images.githubusercontent.com/61898890/156985004-1a91fda4-d7a0-4fd6-a27b-cbb6817e6f82.png)
+
+### model 폴더
+- 외부에서 받아오는 데이터는 Dart와 맞지 않을 수 있으니, 모델을 구현하여 Flutter에 어떻게 넘겨줄지 담당하는 코드를 구현한다
+![image](https://user-images.githubusercontent.com/61898890/156986660-8dd42fef-d705-4b33-894d-a4b029f5679a.png)
+
+### provides 폴더 
+- 특정 서버, 특정 데이터베이스로부터 정보를 받아와서 Decode 후 넘겨준다. 
 
 
+![image](https://user-images.githubusercontent.com/61898890/156986851-24121b89-cf25-46aa-ba2a-d0b87377a6a9.png)
 
-
-
+### Conclusion
+- Architecture Pattern으로 재사용 가능한 코드, 코드의 책임 구분, 분명한 테스트 단위의 효과를 볼 수 있다
 
 ## 6. Pattern을 선택하는 가이드라인
 
+![image](https://user-images.githubusercontent.com/61898890/156987457-b1ae1faa-dbb0-4716-9bc6-d6088896fbc0.png)
 
+### 전체적인 Process
+1. 앱의 특징 확인
+- UI와 로직의 분리가 필요할까? 
+- Native와의 소통이 필요한가?
 
+2. 상태관리 패키지 선택
+- 내가 알고 있는 상태관리는?
+- 패키지 의존적인가? 
+- 커스텀 가능한가? 
+- 상태관리 이외의 기능을 포함하는가? 
 
+3. 테스팅 단위 선택
+- 최소한의 테스팅 단위는? 
+- 테스팅 기준은?
 
+### Pattern reference
+1. State management 
+- ex. BLOC, getX, Redux, Provider
 
-
-
-
-
-
-
+2. Testing
+- ex. Clean Architecture, BLOC Clean
 
 
 ## 7. Flutter 개발자에게 소프트웨어 공학도가 하고 싶은 말
 
-
+- `Architecture, Testing, Code review, 개발 문서는 정말 개발 시간을 더 느리게 할까?`에 대한 고민이 필수이다
 
 
 
