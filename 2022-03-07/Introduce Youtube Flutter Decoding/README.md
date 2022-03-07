@@ -27,11 +27,16 @@
 - 요약 : **Build 메서드 내부에서 변경된 값들은 hot reload 시 업데이트 된다**
 
 
+---
+
 ### 2. 위젯의 생명주기
 
 - 케이크를 만드듯이 수정이 쉽지 않다
 
 - Flutter의 위젯은 생명주기가 없으며 상태(State)에 따라 3가지(build, re-build, 사용되지 않음)로 동작한다
+
+
+---
 
 
 ### 3. BuildContext란?
@@ -51,6 +56,9 @@ StatefulElement createElement() => StatefulElement(this); // override
 
 
 
+---
+
+
 ### 4. Asynce와 Isolate
 - 비동기 작업을 하는 thread
 
@@ -66,30 +74,35 @@ StatefulElement createElement() => StatefulElement(this); // override
 - 메모리를 공유하지 않는 독립적인 작업
 
 
+
+
+---
+
+
 ### 5. Unbounded height/width error
 
 
-
+---
 
 ### 6. Package와 플러그인
 
 
-
+---
 
 ### 7. 노란색 밑줄이 그어진 텍스트 
 
 
-
+---
 
 ### 8. ShrinkWrap과 Sliver
 
 
-
+---
 
 ### 9. 위젯클래스와 헬퍼 메소드
 
 
-
+---
 
 ### 10. Tear-off
 
