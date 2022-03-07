@@ -59,42 +59,88 @@ StatefulElement createElement() => StatefulElement(this); // override
 ---
 
 
-### 4. Asynce와 Isolate
+### 4. Async와 Isolate
 - 비동기 작업을 하는 thread
 
 
 #### Async
-- Async - Wait without blocking : 블로킹 없이 작업을 수행하며 **다른 스레드를 만들지 않는다**
+- Wait without blocking : 블로킹 없이 작업을 수행하며 **다른 스레드를 만들지 않는다**
 
 ```Dart
+void _refresh() async {
+  var url = _assembleUrl(options);
+  var content = await http.get(url);
+  var articles = _parse(content); // _parse를 Isolate로 구현할 수 있다
+  _update(articles);
 
+}
 ```
+- 한 작업이 끝날 때까지 기다릴 때 사용한다
+- 대부분의 작업은 Async만으로도 가능하지만 무거운 작업인 경우에는 어떻게 해야할까?
 
 #### Isolate
+- Run in Parallel : 병렬로 작업을 실행한다
+- Isolate는 다른 Isolate에 **전혀 영향을 미치지 않으며**, **동시에 최고속도로 수행**된다
 - 메모리를 공유하지 않는 독립적인 작업
-
-
 
 
 ---
 
 
 ### 5. Unbounded height/width error
+- Column에 Listview를 넣게 되는 경우 자주 발생한다. (주로 Listveiw의 ShrinkWrap 속성을 true로 해서만 해결하는 경우가 있다. 그러나 그 이유는 왜일까?)
+- Flutter의 layout 퍼포먼스를 높이기 위한 알고리즘에서 파생되는 에러이다
 
+#### 위젯의 알고리즘을 배치하는 기술 
+- Single Pass
+- Constraints go down : Container의 최대 크기값을 하위로 전달
+- Geometry goes up : 위치와 크기 정보를 상위로 전달
+
+#### 해결법
+- 에러는 없지만 원하지 않는 결과 
+- Column이 서로 상호작용하며 정보를 전달
+- Unbounded height error (Size 같은 제한된 크기의 위젯을 사용하거나 expand(), flexible()로 감싼다)
 
 ---
 
 ### 6. Package와 플러그인
+- 앱의 기능 구현을 위해 필요하다
+- ex. url_launcher : url을 실행하기 위한 플러그인
+
+#### Package
+- 순수한 dart 코드로 만들어진 것
+
+#### 플러그인
+- 자바, 코틀린, 스위프트, 자바스크립트 코드가 포함된 것. 
+- 즉 **다른 코드가 포함된 것**
 
 
 ---
 
 ### 7. 노란색 밑줄이 그어진 텍스트 
+- Text 위젯은 위젯 트리를 올라가다 DefaultTextStyle을 발견하고 이를 적용한다
+- Scaffold : 건물 외벽에 인부들이 이동하는 지지대라는 뜻에서 파생
 
+#### DefaultTextStyle은 Scaffold에 정의되어 있었다
+
+![image](https://user-images.githubusercontent.com/61898890/157015499-cbbe732a-1876-4b43-9a4a-62102ce04347.png)
+
+#### 해결 방법
+- DefaultTextStyle을 가진 위젯을 추가한다
+- Scaffold를 상단에 추가한다
 
 ---
 
+
 ### 8. ShrinkWrap과 Sliver
+
+
+
+
+
+
+
+
 
 
 ---
