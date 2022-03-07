@@ -5,15 +5,15 @@
 
 [2. Pattern이란?](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Flutter%EC%97%90%20Architecture%20&%20Design%20Pattern%20%EC%A0%81%EC%9A%A9/README.md#2-pattern%EC%9D%B4%EB%9E%80)
 
-[3. Architecture & Design Pattern](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Flutter%EC%97%90%20Architecture%20&%20Design%20Pattern%20%EC%A0%81%EC%9A%A9/README.md#4-flutter%EC%99%80-pattern)
+[3. Architecture & Design Pattern](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Flutter%EC%97%90%20Architecture%20&%20Design%20Pattern%20%EC%A0%81%EC%9A%A9/README.md#3-architecture--design-pattern)
 
-[4. Flutter와 Pattern](d#4-flutter와-pattern)
+[4. Flutter와 Pattern](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Flutter%EC%97%90%20Architecture%20&%20Design%20Pattern%20%EC%A0%81%EC%9A%A9/README.md#4-flutter%EC%99%80-pattern)
 
-[5. Pattern 적용방법 - BLOC](d#5-pattern-적용방법---bloc)
+[5. Pattern 적용방법 - BLOC](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Flutter%EC%97%90%20Architecture%20&%20Design%20Pattern%20%EC%A0%81%EC%9A%A9/README.md#5-pattern-%EC%A0%81%EC%9A%A9%EB%B0%A9%EB%B2%95---bloc)
 
-[6. Pattern을 선택하는 가이드라인](d#6-pattern을-선택하는-가이드라인)
+[6. Pattern을 선택하는 가이드라인](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Flutter%EC%97%90%20Architecture%20&%20Design%20Pattern%20%EC%A0%81%EC%9A%A9/README.md#6-pattern%EC%9D%84-%EC%84%A0%ED%83%9D%ED%95%98%EB%8A%94-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8)
 
-[7. Flutter 개발자에게 소프트웨어 공학도가 하고 싶은 말 ](d#7-flutter-개발자에게-소프트웨어-공학도가-하고-싶은-말)
+[7. Flutter 개발자에게 소프트웨어 공학도가 하고 싶은 말 ](https://github.com/kmj980521/Conference_Review/blob/main/2022-03-07/Flutter%EC%97%90%20Architecture%20&%20Design%20Pattern%20%EC%A0%81%EC%9A%A9/README.md#7-flutter-%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EA%B2%8C-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B3%B5%ED%95%99%EB%8F%84%EA%B0%80-%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EB%A7%90)
 
 
 ---
