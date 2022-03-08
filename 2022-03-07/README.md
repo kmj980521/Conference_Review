@@ -18,7 +18,17 @@
 
 ## 3. Introduce Youtube Flutter Decoding
 - 김선호님 
-
+- 플러터 디코딩
+- 핫 리로드가 동작하지 않는 이유
+- 위젯의 생명주기
+- BuildContext란?
+- Async와 Isolate
+- Unbounded height/width error
+- Package와 플러그인
+- 노란색 밑줄이 그어진 텍스트
+- ShinkWrap과 Sliver
+- 위젯클래스와 헬퍼 메소드
+- Tear-off
 
 [유튜브 영상](https://www.youtube.com/watch?v=W6D1MqqPdXs)
 
