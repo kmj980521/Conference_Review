@@ -9,6 +9,8 @@
 
 ![image](https://user-images.githubusercontent.com/61898890/157198196-ff637b75-3e77-469a-9df1-bfd6ef9fb710.png)
 
+--- 
+
 ## 2. Flutter 2.0 & Dart 2.12
 - 2021.03.03
 ### Null-safety
@@ -36,6 +38,8 @@
 
 [출처 유튜브 영상](https://www.youtube.com/watch?v=fhOGL_6XGTg)
 
+---
+
 ## 3. Flutter 2.2 & Dart 2.13
 - 2021.05.19
 
@@ -44,5 +48,8 @@
 - [DartPad](https://dartpad.dev/?)
 
 ### Flutter at Google I/O
+- Flutter를 배울 수 있는 세션
+
+
 ### Google I/O Extended with double S
 ### Flutter Favorites Package
