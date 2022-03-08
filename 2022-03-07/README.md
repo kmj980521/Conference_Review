@@ -2,7 +2,7 @@
 
 ## Flutter에 Architecture & Design Pattern 적용
 - 송승현님
-
+- BLOC Pattern, 폴더 구조
 
 [유튜브 영상](https://www.youtube.com/watch?v=bp9AlSUsS10)
 
@@ -39,6 +39,6 @@
 
 ## 플러터 업데이트 모아보기
 - 홍종표님
-
+- 2021 Flutter 
 
 [유튜브 영상](https://www.youtube.com/watch?v=fhOGL_6XGTg)
