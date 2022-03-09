@@ -1,11 +1,13 @@
 # Flutter Korea
 
 ## 1. Flutter에 Architecture & Design Pattern 적용
-- 송승현님
+<details>
+ <summary> 발표자 송승현님</summary>
 - BLOC Pattern, 폴더 구조
 
 [유튜브 영상](https://www.youtube.com/watch?v=bp9AlSUsS10)
-
+</details>
+ 
 ----
 
 ## 2. Flutter에 네이티브 모듈 연동하기
