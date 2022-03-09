@@ -55,9 +55,49 @@
 
 ## 6. 지식인 앱 CI & CD 소개
 - yutae님
+### CD(Continuous Deployment/Deliver)
+- 지속적 배포
 
+#### Jenkins open source
+- blue ocean & pipeline 기능
+
+#### Jenkins pipeline
+1. git checkout
+2. flutter init
+3. parallel execution
+4. ios/android 동시에 build
+5. store update
+
+![image](https://user-images.githubusercontent.com/61898890/157449274-908469d5-f89d-4d26-b561-ea9593ca7184.png)
+
+#### fvm(Flutter Version Management)
+- Flutter SIDEKICK
+- Configure version per project
+- Fast switch
+- Parallelism 
 
 [유튜브 영상](https://www.youtube.com/watch?v=XE7arhC6tsc)
+
+#### fastlane
+- automate deploy
+- 배포관리가 쉬워진다
+
+#### hubot
+- deploy 실행을 더 쉽게하기 위해 만듦
+
+### CI(Continuous Integration)
+- 지속적 통합
+- static code analysis
+- code convention
+- build test
+
+#### Github Action
+- CI와 CD 모두 가능하다
+- 해당 trigger는 pull request가 올라왔을 때 push, fork 했을 때로 선택할 수 있다
+- self hosted
+
+![image](https://user-images.githubusercontent.com/61898890/157455993-09740802-4ca1-4e17-9269-513239cd191d.png)
+
 
 --- 
 
