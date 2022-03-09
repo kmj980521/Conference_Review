@@ -76,7 +76,6 @@
 - Fast switch
 - Parallelism 
 
-[유튜브 영상](https://www.youtube.com/watch?v=XE7arhC6tsc)
 
 #### fastlane
 - automate deploy
@@ -97,6 +96,8 @@
 - self hosted
 
 ![image](https://user-images.githubusercontent.com/61898890/157455993-09740802-4ca1-4e17-9269-513239cd191d.png)
+
+[유튜브 영상](https://www.youtube.com/watch?v=XE7arhC6tsc)
 
 
 --- 
