@@ -55,13 +55,59 @@
  
  ### 네이티브 모듈 연동시 질문해볼 것들
  - 네이티브를 연동하는 것이 **최선인가?**
+ - Flutter 쪽 데이터에 **많이 의존적인 모듈인가?**
+ - Flutter 쪽 UI에 많의 의존적인 모듈인가?
+ - 메인 언어가 아닌(ex. Python, JavaScript)를 사용하는가?
+ 
+ ### Case1: 음성영상 수업 모듈
+ - 전문가와 음성 및 영상 통화 가능
+ - 1:1 통화, 그룹 통화 가능
+ - 실시간 채팅 및 사용자 제어 기능
+ 
+ #### 네이티브로 개발하는 것이 더 효율적인가?
+ - Dart로 포팅하기에는 부담이 크다.
+ - 내부 코드를 알기 어렵다
+ - 유지보수 부담도 매우 크다
+ - 과연 퍼포먼스 이점이 있을지 고민이 된다. 
+ - 데이터에 의존적이지 않기 때문에 네이티브 위주로 개발을 한다
  
  
+ ![image](https://user-images.githubusercontent.com/61898890/157692130-9f871de1-f0da-4766-a31e-7900330f4b73.png)
+
+ ### case2: 텍스트 에디터
+ - 질문에 답변할 때 사용하는 텍스트 에디터
+ - 폰트 수정, 미디어 첨부 가능한 Rich Text
+ - 임시 저장, 발행 옵션 설정 기능
  
+#### 네이티브로 개발하는 것이 더 효율적인가?
+ - Dart로 포팅하기에는 부담이 컸다
+ - 글을 불러오고, 저장하고, 등록할 때, Flutter 데이터와 로직에 많이 의존을 했다
+ - MethodChannel도 글 저장, 호출 할 때 **양방향으로** 액티브하게 중계를 했다
+ - Flutter Ui에 굉장히 의존적이었다
+ - Flutter UI가 언제 어디서든 나올 수 있어야 했다
  
+ ![image](https://user-images.githubusercontent.com/61898890/157693630-649853ce-f757-4c84-a96d-11f20bcef4f9.png)
+
  
+ ### case3: 파이썬 모듈 연동
+ - 기존에 만든 파이썬 로직을 Dart로 포팅하기 귀찮을 때
+ - pub.dev에 없는 파이썬 라이브러리를 연동하고 싶을 때 (ex. SciPy, Numpy)
  
+ #### Starflut
+ - Python을 실행할 수 있는 Dart 패키지
+ - Python 외에도 Ruby, Golang, Rust 등 실행이 가능하다
+ - 그러나 Python 라이브러리 설치는 어렵다
+ - 사용법이 직관적이지는 않다
  
+ #### Chaquopy
+ - Python을 실행할 수 있는 Dart 패키지
+ - Python 라이브러리 설치 지원
+ - Starflut 보다 사용법이 직관적이다.
+ 
+ `Chaquopy.executaCode("print('helloworld')");`
+ 
+ - 하지만 유료 라이센스가 필요하다
+ - Android 환경에서만 지원이 된다
  
  
  [유튜브 영상](https://www.youtube.com/watch?v=nIqTfAeYc3Y)
