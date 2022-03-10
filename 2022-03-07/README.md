@@ -16,6 +16,54 @@
 <details>
  <summary>발표자 김기범님</summary>
  
+ ### 크로스 플랫폼인데 네이티브 모듈을?
+ - 기존 네이티브 모듈을 꼭 서야할 때가 있다
+ - 네이티브 모듈을 포팅하기 어려울 때
+ - 네이티브 모듈이 더 효율적일 때
+ 
+ ### 네이티브 모듈을 포팅하기 어려운 경우
+ - 네이티브 로직이 복잡할 때
+ - 네이티브 로직이 아예 공개가 안 되어 있을 때
+ 
+ ### 네이티브 모듈이 더 효율적인 경우
+ - 유지보수 비용이 덜 들어가는 경우
+ - 네이티브 퍼포먼스가 더 뛰어난 경우
+ 
+ ### 연동하기
+ #### 데이터와 연동하기
+ - 네이티브 모듈을 실행할 때, Flutter 쪽 데이터가 필요한 경우
+ - ex) 초기 설정값, 사용자 인증 정보
+ 
+ 
+ #### UI와 연동하기 
+ - 네이티브 모듈을 실행할 때, Flutter 쪽 UI가 필요한 경우
+ - ex) 네이티브 화면 내에서 Flutter 앱바 및 페이지 띄우기
+ 
+ 
+ ### 어떻게 연동할 것인가?
+ 
+ #### Method Channel
+ - Flutter <-> Native 양방향 통신으로 데이터와 로직을 공유 
+ 
+ ![image](https://user-images.githubusercontent.com/61898890/157690645-3a164c95-bcef-43a5-baae-b7284b4bfe95.png)
+  
+ #### Flutter view
+ - Flutter UI + Native UI를 한 화면에 녹여낼 수 있다
+ 
+ ![image](https://user-images.githubusercontent.com/61898890/157690910-8e3667f5-80ed-4d3a-8a74-e93d726f8243.png)
+
+ 
+ ### 네이티브 모듈 연동시 질문해볼 것들
+ - 네이티브를 연동하는 것이 **최선인가?**
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  [유튜브 영상](https://www.youtube.com/watch?v=nIqTfAeYc3Y)
  
  </details>
